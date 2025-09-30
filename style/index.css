@@ -24,7 +24,7 @@ header {
     height: 90px;
 }
 
-header > p {
+header>p {
     font-size: 0.9em;
     padding-top: 5px;
 }
@@ -36,7 +36,7 @@ main {
     background-color: #364e63;
 }
 
-main > p {
+main>p {
     font-weight: bold;
     font-size: 1.1em;
     margin-top: 30px;
@@ -44,7 +44,7 @@ main > p {
     text-align: center;
 }
 
-main > h2 {
+main>h2 {
     margin-top: 25px;
     margin-bottom: 40px;
     text-align: center;
@@ -76,7 +76,7 @@ nav {
 }
 
 nav a {
-    border:  1px solid #979595;
+    border: 1px solid #979595;
     background-color: white;
     color: black;
     text-decoration: none;
@@ -85,16 +85,9 @@ nav a {
     width: 90px;
     height: 90px;
     border-radius: 15px;
-    transition: 0.3s ease-out;
 }
 
-nav a:hover {
-    border-radius: 20px;
-    transform: scale(1.05);
-    transition: 0.3s ease-out;
-}
-
-nav a > p {
+nav a>p {
     margin-top: 5px;
 }
 
@@ -106,4 +99,22 @@ footer {
 
 footer a {
     color: white;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    nav a {
+        transition: 0.3s ease-out;
+    }
+
+    nav a:hover {
+        border-radius: 20px;
+        transform: scale(1.05);
+        transition: 0.3s ease-out;
+    }
+}
+
+@media (hover: none), (pointer: coarse) {
+    nav a {
+        transform: none;
+    }
 }
