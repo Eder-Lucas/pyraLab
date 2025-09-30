@@ -101,26 +101,14 @@ footer a {
     color: white;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
     nav a {
         transition: 0.3s ease-out;
     }
 
-    nav a:hover {
+    nav a:hover,
+    :focus-visible {
         border-radius: 20px;
-        transform: scale(1.05);
-        transition: 0.3s ease-out;
-    }
-}
-
-@media (hover: none), (pointer: coarse) {
-    nav a:hover {
-        border-radius: 15px;
-        transform: none;
-        transition: none;
-    }
-
-    nav a:active {
         transform: scale(1.05);
         transition: 0.3s ease-out;
     }
