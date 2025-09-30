@@ -114,7 +114,14 @@ footer a {
 }
 
 @media (hover: none), (pointer: coarse) {
-    nav a {
+    nav a:hover {
+        border-radius: 15px;
         transform: none;
+        transition: none;
+    }
+
+    nav a:active {
+        transform: scale(1.05);
+        transition: 0.3s ease-out;
     }
 }
