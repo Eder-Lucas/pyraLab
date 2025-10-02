@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 546px) {
+    main section {
+        width: 100vw;
+        border-radius: 0px;
+    }
+}
